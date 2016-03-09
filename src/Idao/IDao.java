@@ -7,20 +7,16 @@ package Idao;
 
 import java.util.List;
 
-/**
- *
- * @author Super
- * @param <S>
- */
-public interface IDao<S> {
-        void add(S s);
+public interface IDao<T> {
 
-    void update(S s);
+    void add(T t);
+
+    void update(T t);
 
     void removeById(int id);
 
-    List<S> findAll();
+    List<T> findAll();
 
-    S findById(int id);
-    
+    T findById(int id);
+
 }
